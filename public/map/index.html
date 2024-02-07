@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load d3.js and the geo projection plugin -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script> 
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+  <div id="map-holder"></div>
+
+    <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="user-badge position-relative">
+            <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+              <img src="./images/badge-close.svg">
+            </button>
+    
+            <div class="user-badge__users-part d-flex align-items-center">
+                <img class="user-badge__user-img" id="userImg" src="">
+    
+                <div class="user-badge__main-info-cont">
+                    <b class="user-badge__user-name" id="userName"></b>
+                    <p class="user-badge__birth-info mb-0" id="userBirth"></p>
+                </div>
+            </div>
+    
+            <p class="user-badge__user-txt mb-0" id="userDesc"></p>            
+          </div>      
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <input type="hidden" id="openModal" data-toggle="modal" data-target="#modal">
+
+  <script src="./js/script.js"></script>
+</body>
+</html>

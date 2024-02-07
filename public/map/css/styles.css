@@ -1,0 +1,100 @@
+body {
+    margin: 0;         
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 200;
+    font-size: 17px;
+    transition:all 0.4s;
+}
+#map-holder {
+    width: 100vw;
+    height: 100vh;
+}
+svg {
+    background:#090C28;
+    transition:all 0.4s;
+}
+svg rect {
+    fill: #090C28;   /* map background colour */
+}
+
+.country{
+    fill: #090C28;   /* country colour */
+    stroke: #8760ff; /* country border colour */
+    stroke-dasharray:"5,5";
+    cursor:pointer;
+    transition:all 0.5s;
+}
+.country-on{
+    fill: #797979;   /* highlight colour for selected country */    
+}
+.countryLabel{
+    display: block!important;   /* hide all country labels by default */
+}
+.point{
+    cursor:pointer;
+    text-anchor:middle;
+    transition:all 1s;
+} 
+
+.countryLabelBg{
+    fill: red;   /* country label background colour */
+}
+
+.modal-backdrop {
+  display:none;
+}
+
+.user-badge {
+  padding: 20px 30px 30px 30px;
+  background-color: white;
+  border-radius: 10px;
+  max-height: 441px;
+}
+.user-badge__users-part {
+  margin-bottom: 20px;
+}
+.user-badge__user-img {
+  margin-right: 20px;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.user-badge__user-name{
+  font-family: "Noto Sans";
+  font-weight: bold!important;
+  font-size: 20px;
+}
+
+.user-badge__user-txt {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  color: #000;
+  max-height: 216px;
+  overflow-y: auto;
+  padding-right: 20px;
+  /* Track */
+  /* Handle */
+}
+.user-badge__user-txt::-webkit-scrollbar {
+  width: 6px;
+}
+.user-badge__user-txt::-webkit-scrollbar-track {
+  background: transparent;
+}
+.user-badge__user-txt::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+}
+
+.modal-dialog {
+  max-width:50%;
+}
+
+.close {
+  top:20px;
+  right:30px;
+  outline:unset!important;
+}
